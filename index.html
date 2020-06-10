@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Car racing game</title>
+  <meta name="keywords" content="html,css,lekcii" />
+  <meta name="description" content="ova e strana za ucenje" />
+  <meta name="author" content="Darko Ilov" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+
+<body id="race">
+  <h1>Car racing game</h1>
+  <div class="buttons">
+    <button id="start">Race!</button>
+    <button id="reset">Start over</button>
+  </div>
+
+  <div id="racetrack" class="raceTrackImg">
+    <img src="img/car2.gif" class="cars" id="car2" />
+    <img src="img/car1.gif" class="cars" id="car1" />
+        <div class="finish">
+          <span class="timer none"></span>
+          <img src="img/finish.gif" alt="" class="none">
+        </div>
+    
+  </div>
+
+  <div class="row">
+    <div class="col-md-6 col-xs-6 result">
+      <h2>Results</h2>
+      <div class="row">
+        <div class="col-md-6 col-xs-6">
+          <h3 class="white">Car1</h3>
+        </div>
+        <div class="col-md-6 col-xs-6">
+          <h3 class="red">Car2</h3>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6 col-xs-6 lastGame none">
+      <h3>Results from the previous time you played this game:</h3>
+      </th>
+    </div>
+  </div>
+
+  <table class="table1">
+    <tbody class="tableBody">
+      <tr class="tr"></tr>
+    </tbody>
+    <tbody class="tableBody">
+      <tr class="tr2"></tr>
+    </tbody>
+    <tbody class="lastGame none">
+      <tr>
+        <td class="lastInfoCar1"></td>
+      </tr>
+      <tr>
+        <td class="lastInfoCar2"></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>
